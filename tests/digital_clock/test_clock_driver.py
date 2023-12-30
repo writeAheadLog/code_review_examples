@@ -1,7 +1,7 @@
 import unittest
 
-from digital_clock.tests.test_doubles.mock_time_sink import MockTimeSink
-from digital_clock.tests.test_doubles.mock_time_source import MockTimeSource
+from tests.digital_clock.test_doubles.mock_time_sink import MockTimeSink
+from tests.digital_clock.test_doubles.mock_time_source import MockTimeSource
 
 
 class TestClockDriver(unittest.TestCase):
