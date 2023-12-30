@@ -20,6 +20,9 @@ def get_object_from_s3(bucket_name, object_key):
         return None
 
 
+# DynamoDB에 데이터를 삽입하는 함수
+# table_name: DynamoDB 테이블 이름
+# data: S3 객체의 데이터
 def put_data_to_dynamodb(table_name, data):
     try:
         response = dynamodb.put_item(
